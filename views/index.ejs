@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <h1 id="heading">Converter</h1>
+    <form class="form" action="/solution" method="post" >
+      <div>
+        <select class="selection" name="pre" required>
+          <option value="0">Decimal</option>
+          <option value="1">Binary</option>
+          <option value="2">Octal</option>
+          <option value="3">Hexa-decimal</option>
+        </select>
+        <input class="selection"  type="text" name="input" placeholder="Enter Value" required>
+      </div>
+      <div>
+      <select class="selection"  name="post" required>
+        <option value="0">Decimal</option>
+        <option value="1">Binary</option>
+        <option value="2">Octal</option>
+        <option value="3">Hexa-decimal</option>
+      </select>
+    </div>
+    <div class="selection" id="answer"><%= ans %></div>
+    <div><button class="selection" type="submit">Calculate</button></div>
+    </form>
+  </body>
+</html>
